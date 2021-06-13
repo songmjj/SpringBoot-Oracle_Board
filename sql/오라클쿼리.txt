@@ -1,0 +1,7 @@
+CREATE USER boardjpa IDENTIFIED BY boardjpa;
+GRANT CONNECT, RESOURCE TO boardjpa;
+GRANT ALTER SESSION TO boardjpa;
+
+conn boardjpa/boardjpa;
+
+show user;
